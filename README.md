@@ -138,8 +138,8 @@ flowchart TD
 ```
 
 ### Day14
-Christmas tree:
-[Robots in shape of Christmas  tree](robots_frame6888.bmp "Robots in shape of Christmas  tree")
+Christmas tree:<br>
+![Robots](robots_frame6888.bmp)
 
 ### Day15
 Final map of boxes, walls and robot:
