@@ -15,7 +15,7 @@ fun main() {
             velocity = v.first().toInt() to v.second().toInt(),
         )
     }
-    repeat(6889) { // 6888
+    repeat(10000) {
         val sumOfDistances = robots.map { it.position }.combinations().sumOf { cartesianDistance(it.first, it.second) }
         println("Iterations: $it --- sum of distances: $sumOfDistances")
         if (sumOfDistances < 5000000) {

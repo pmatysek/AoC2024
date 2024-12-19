@@ -125,6 +125,14 @@ enum class Direction4(
     override fun getVector(): Point {
         return this.pointVector
     }
+
+    fun toPrettySymbol() =
+        when(this) {
+            UP -> '^'
+            DOWN -> 'v'
+            LEFT -> '<'
+            RIGHT -> '>'
+        }
 }
 
 fun Direction8.turn90DegreesRight(): Direction8 {
@@ -187,6 +195,15 @@ fun Direction4.turn90DegreesRight(): Direction4 {
         Direction4.RIGHT -> Direction4.DOWN
         Direction4.DOWN -> Direction4.LEFT
         Direction4.LEFT -> Direction4.UP
+    }
+}
+
+fun Direction4.turn90DegreesLeft(): Direction4 {
+    return when (this) {
+        Direction4.UP -> Direction4.LEFT
+        Direction4.RIGHT -> Direction4.UP
+        Direction4.DOWN -> Direction4.RIGHT
+        Direction4.LEFT -> Direction4.DOWN
     }
 }
 
